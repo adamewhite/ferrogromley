@@ -1,0 +1,619 @@
+#WinnerContainer {
+  position: relative;
+  width: 100vw;
+  background-color: #ffc3c6;
+  overflow-x: hidden; }
+  #WinnerContainer a {
+    text-decoration: none;
+    color: black;
+    pointer: cursor; }
+    #WinnerContainer a:active, #WinnerContainer a:hover {
+      padding-bottom: 3px;
+      border-bottom: 5px solid black; }
+  #WinnerContainer .active {
+    padding-bottom: 3px;
+    border-bottom: 5px solid black;
+    pointer-events: none;
+    cursor: default; }
+
+.firstPane {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 1px dotted red; }
+  .firstPane #banner {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    font-size: 55px;
+    font-family: 'Eesti', Courier;
+    max-width: 45vw; }
+  .firstPane ul {
+    position: absolute;
+    top: 25vh;
+    left: 8vw;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    width: 55vw; }
+    .firstPane ul li {
+      font-family: 'America';
+      font-size: 20px;
+      padding: 0 2vw; }
+  .firstPane #marqueeText1 {
+    position: absolute;
+    top: 55vh;
+    left: 10vw;
+    font-size: 80px;
+    font-family: 'Eesti', Courier;
+    max-width: 45vw; }
+  .firstPane #marqueeText2 {
+    position: absolute;
+    top: 65vh;
+    left: 15vw;
+    font-size: 80px;
+    font-family: 'Eesti', Courier;
+    max-width: 45vw; }
+  .firstPane #longRedRectangle {
+    position: absolute;
+    height: 50vh;
+    width: 12vw;
+    background-color: #FF0038;
+    top: 30vh;
+    right: 30vw;
+    z-index: 3;
+    animation: longRedRectangleBobbing 15s alternate infinite; }
+  .firstPane #longWhiteRectangle {
+    position: absolute;
+    height: 55vh;
+    width: 12vw;
+    background-color: #FFE8E9;
+    top: 40vh;
+    right: 10vw;
+    animation: longWhiteRectangleBobbing 15s alternate infinite; }
+  .firstPane #thinBlueLine {
+    position: absolute;
+    height: 1vh;
+    width: 35vw;
+    background-color: #0098D5;
+    top: 50vh;
+    right: 30vw;
+    z-index: 4;
+    animation: thinBlueLineWobbling 15s alternate infinite; }
+  .firstPane #mediumAquaCircle {
+    position: absolute;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    background-color: #00FDC9;
+    top: 10vh;
+    right: 20vw;
+    z-index: 3;
+    animation: mediumAquaCircleBobbing 15s alternate infinite; }
+  .firstPane #yellowTriangle {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 180px solid #F6ED74;
+    top: 15vh;
+    right: 10vw;
+    animation: yellowTriangleWobbling 15s alternate infinite; }
+
+@keyframes longRedRectangleBobbing {
+  0% {
+    transform: translate(0, 0) rotate(-40deg); }
+  100% {
+    transform: translate(1vw, 5vh) rotate(-15deg); } }
+
+@keyframes longWhiteRectangleBobbing {
+  0% {
+    transform: translate(0, 0) rotate(10deg); }
+  100% {
+    transform: translate(-1vw, -4vh) rotate(20deg); } }
+
+@keyframes thinBlueLineWobbling {
+  0% {
+    transform: translate(0, 0) rotate(15deg); }
+  100% {
+    transform: translate(-2vw, 4vh) rotate(20deg); } }
+
+@keyframes mediumAquaCircleBobbing {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(1vw, 1vh); } }
+
+@keyframes yellowTriangleWobbling {
+  0% {
+    transform: translate(0, 0) rotate(-5deg); }
+  100% {
+    transform: translate(-2vw, 4vh) rotate(0deg); } }
+
+#winnerPane {
+  position: relative;
+  height: 1400vh;
+  width: 100vw; }
+  #winnerPane .winnerSection {
+    display: flex;
+    flex: column wrap;
+    align-items: center;
+    width: 75vw;
+    height: 50vh;
+    z-index: 5; }
+  #winnerPane .leftWinnerSection {
+    float: left;
+    justify-content: flex-start; }
+  #winnerPane .rightWinnerSection {
+    float: right;
+    justify-content: flex-end; }
+  #winnerPane .groupWinnerBox {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'America';
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 50vw;
+    z-index: 7; }
+  #winnerPane .winnerYear {
+    padding: 5px;
+    margin: 15px;
+    font-family: 'Eesti';
+    font-size: 50px;
+    transform: rotate(-90deg); }
+  #winnerPane .individualWinnerBox {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px; }
+    #winnerPane .individualWinnerBox img {
+      width: 15vw;
+      margin: 5px;
+      border: 1px solid black; }
+    #winnerPane .individualWinnerBox li {
+      font-size: 22px;
+      max-width: 20vw;
+      z-index: 5;
+      padding: 5px; }
+    #winnerPane .individualWinnerBox .winnerName {
+      padding-bottom: 5px;
+      z-index: 10; }
+    #winnerPane .individualWinnerBox .winnerTitle {
+      font-family: 'AmericaItalic';
+      z-index: 10; }
+  #winnerPane .babyBar {
+    position: absolute;
+    height: 2vh;
+    width: 12vw;
+    background-color: orchid;
+    transform: rotate(30deg);
+    top: 25vh;
+    mix-blend-mode: normal;
+    z-index: 3; }
+  #winnerPane .babyCircle {
+    position: absolute;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    background-color: chartreuse;
+    top: 35vh;
+    mix-blend-mode: normal; }
+  #winnerPane .babyTriangle {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 5vh solid transparent;
+    border-right: 5vh solid transparent;
+    border-bottom: 8vh solid yellow;
+    top: 15vh; }
+  #winnerPane .babyHalfCircle {
+    position: absolute;
+    height: 3.2vw;
+    width: 6.4vw;
+    border-bottom-left-radius: 6.4vw;
+    border-bottom-right-radius: 6.4vw;
+    background-color: #fa4b4b;
+    top: 18vh; }
+  #winnerPane .babySquare {
+    position: absolute;
+    height: 9vh;
+    width: 9vh;
+    background-color: slateblue;
+    transform: rotate(-30deg);
+    top: 28vh; }
+  #winnerPane .mediumTriangle {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 10vh solid transparent;
+    border-right: 10vh solid transparent;
+    border-bottom: 15vh solid aqua;
+    top: 12vh;
+    mix-blend-mode: multiply; }
+  #winnerPane .mediumSquare {
+    position: absolute;
+    height: 18vh;
+    width: 18vh;
+    background-color: peru;
+    transform: rotate(30deg);
+    top: 18vh; }
+  #winnerPane .mediumCircle {
+    position: absolute;
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    background-color: deeppink;
+    top: 15vh;
+    mix-blend-mode: multiply; }
+  #winnerPane .mediumHalfCircle {
+    position: absolute;
+    height: 6.4vw;
+    width: 12.8vw;
+    border-bottom-left-radius: 12.8vw;
+    border-bottom-right-radius: 12.8vw;
+    background-color: mediumseagreen;
+    top: 18vh; }
+  #winnerPane .thinBar {
+    position: absolute;
+    height: 1vh;
+    width: 20vw;
+    background-color: black;
+    top: 15vh; }
+  #winnerPane .bigCircle {
+    position: absolute;
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+    left: -17.5vh;
+    background-color: yellow;
+    top: 7vh; }
+  #winnerPane .bigSquare {
+    position: absolute;
+    height: 30vh;
+    width: 30vh;
+    background-color: blue;
+    transform: rotate(45deg);
+    left: -17.5vh;
+    top: 10vh; }
+  #winnerPane .bigTriangle {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 20vh solid transparent;
+    border-right: 20vh solid transparent;
+    border-bottom: 35vh solid OrangeRed;
+    top: 5vh;
+    left: 5vw; }
+  #winnerPane .bigHalfCircle {
+    position: absolute;
+    height: 9vw;
+    width: 18vw;
+    border-bottom-left-radius: 18vw;
+    border-bottom-right-radius: 18vw;
+    background-color: mediumseagreen;
+    top: 12vh; }
+  #winnerPane .blackBarBox {
+    position: absolute;
+    top: 15vh; }
+  #winnerPane .subBlackBar {
+    position: absolute;
+    width: 10vw;
+    height: 1.5vh;
+    background-color: black; }
+  #winnerPane .subBlackBar1 {
+    top: 0; }
+  #winnerPane .subBlackBar2 {
+    top: 20px; }
+  #winnerPane .subBlackBar3 {
+    top: 40px; }
+  #winnerPane .subBlackBar4 {
+    top: 60px; }
+  #winnerPane .subBlackBar5 {
+    top: 80px; }
+
+@keyframes bobbing {
+  0% {
+    transform: translate(0, 0) rotate(0); }
+  100% {
+    transform: translate(2vw, 2vh) rotate(5deg); } }
+
+@keyframes spinning {
+  0% {
+    transform: translate(0, 0) rotate(0); }
+  100% {
+    transform: translate(0.5vw, 0.5vh) rotate(-15deg); } }
+
+@keyframes sashaying {
+  0% {
+    transform: translate(0, 0) rotate(0); }
+  100% {
+    transform: translate(-1vw, -4vh) rotate(-3deg); } }
+
+@keyframes tweaking {
+  0% {
+    transform: translate(0, 0) rotate(0); }
+  100% {
+    transform: translate(-1vw, -1vh) rotate(3deg); } }
+  #winnerPane .bobbing {
+    animation: bobbing 15s alternate infinite; }
+  #winnerPane .spinning {
+    animation: spinning 15s alternate infinite; }
+  #winnerPane .sashaying {
+    animation: sashaying 15s alternate infinite; }
+  #winnerPane .tweaking {
+    animation: tweaking 15s alternate infinite; }
+  #winnerPane .sideDecor {
+    position: absolute;
+    right: 0;
+    left: auto;
+    height: 50vh;
+    width: 50vw;
+    z-index: 1; }
+  #winnerPane .leftSideDecor {
+    left: 0;
+    right: auto; }
+  #winnerPane #_1989 {
+    top: 0;
+    left: 5vw; }
+  #winnerPane #_1990 {
+    top: 50vh;
+    right: -35vw; }
+  #winnerPane #_1991 {
+    top: 100vh;
+    left: 5vw; }
+  #winnerPane #_1992 {
+    top: 150vh;
+    right: -25vw; }
+  #winnerPane #_1993 {
+    top: 200vh; }
+  #winnerPane #_1994 {
+    top: 250vh;
+    right: -30vw; }
+  #winnerPane #_1995 {
+    top: 300vh; }
+  #winnerPane #_1996 {
+    top: 350vh;
+    right: -30vw; }
+  #winnerPane #_1997 {
+    top: 400vh;
+    left: 5vw; }
+  #winnerPane #_1998 {
+    top: 450vh;
+    right: -25vw; }
+  #winnerPane #_1999 {
+    top: 500vh; }
+  #winnerPane #_2000 {
+    top: 550vh; }
+  #winnerPane #_2001 {
+    top: 600vh;
+    left: 5vw; }
+  #winnerPane #_2002 {
+    top: 650vh;
+    right: -30vw; }
+  #winnerPane #_2003 {
+    top: 700vh;
+    left: 5vw; }
+  #winnerPane #_2004 {
+    top: 750vh;
+    right: -20vw; }
+  #winnerPane #_2005 {
+    top: 800vh;
+    left: 5vw; }
+  #winnerPane #_2006 {
+    top: 850vh; }
+  #winnerPane #_2007 {
+    top: 900vh;
+    left: 5vw; }
+  #winnerPane #_2008 {
+    top: 950vh;
+    right: -10vw; }
+  #winnerPane #_2009 {
+    top: 1000vh; }
+  #winnerPane #_2010 {
+    top: 1050vh;
+    right: -20vw; }
+  #winnerPane #_2011 {
+    top: 1100vh;
+    left: 5vw; }
+  #winnerPane #_2012 {
+    top: 1150vh;
+    right: -25vw; }
+  #winnerPane #_2013 {
+    top: 1200vh;
+    left: 5vw; }
+  #winnerPane #_2014 {
+    top: 1250vh;
+    right: -25vw; }
+  #winnerPane #_2015 {
+    top: 1300vh;
+    left: 5vw; }
+  #winnerPane #_2016 {
+    top: 1350vh;
+    right: -25vw; }
+
+.finalPane {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FEFBD2;
+  position: relative; }
+  .finalPane #bigYellowCircle {
+    position: absolute;
+    top: 45vh;
+    left: 1vw;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    background-color: #FCEF7B;
+    animation: bigYellowCircleBobbing 15s alternate infinite; }
+  .finalPane #littleRedCircle {
+    position: absolute;
+    top: 5vh;
+    left: 20vw;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    background-color: #F91A33;
+    animation: littleRedCircleBobbing 15s alternate infinite; }
+  .finalPane #littleBlueBar {
+    position: absolute;
+    top: 40vh;
+    left: 25vw;
+    height: 4vh;
+    width: 7vw;
+    background-color: #736CFD;
+    animation: littleBlueBarRotating 15s alternate infinite; }
+  .finalPane #longRedBar {
+    position: absolute;
+    top: 45vh;
+    left: 60vw;
+    height: 1vh;
+    width: 40vw;
+    background-color: #FA0C16;
+    animation: longRedBarRotating 15s alternate infinite; }
+  .finalPane #littleGreenTriangle {
+    position: absolute;
+    top: 15vh;
+    left: 85vw;
+    height: 0;
+    width: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 90px solid #52FFAE;
+    animation: littleGreenTriangleBobbing 15s alternate infinite; }
+
+@keyframes bigYellowCircleBobbing {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(1vw, 6vh); } }
+
+@keyframes littleRedCircleBobbing {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0.3vw, 3vh); } }
+
+@keyframes littleBlueBarRotating {
+  0% {
+    transform: translate(0, 0) rotate(-5deg); }
+  100% {
+    transform: translate(0.2vw, -0.3vh) rotate(-15deg); } }
+
+@keyframes longRedBarRotating {
+  0% {
+    transform: translate(0, 0) rotate(75deg); }
+  100% {
+    transform: translate(-0.2vw, 0.3vh) rotate(85deg); } }
+
+@keyframes littleGreenTriangleBobbing {
+  0% {
+    transform: translate(0, 0) rotate(5deg); }
+  100% {
+    transform: translate(2vw, 4vh) rotate(10deg); } }
+
+ul.bottomNav {
+  position: absolute;
+  top: 82vh;
+  width: 100vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; }
+
+ul.bottomNav li {
+  color: black;
+  font-family: 'Eesti';
+  font-size: 30px; }
+
+@media (min-width: 751px) and (max-width: 850px) {
+  #WinnerContainer #splashHeadline {
+    left: 10%;
+    font-size: 27px; }
+  #winnerPane .winnerYear {
+    font-size: 40px; }
+  #winnerPane .individualWinnerBox li {
+    font-size: 20px;
+    background-color: teal; }
+  #fifthPane ul#sweetBottomNav li a {
+    font-size: 24px;
+    letter-spacing: 1px; } }
+
+@media (min-width: 651px) and (max-width: 750px) {
+  #WinnerContainer .firstPane #banner {
+    font-size: 40px; }
+  #WinnerContainer .firstPane #marqueeText1 {
+    font-size: 70px; }
+  #WinnerContainer .firstPane #marqueeText2 {
+    font-size: 70px; }
+  #WinnerContainer #splashHeadline {
+    left: 10%;
+    font-size: 27px;
+    background-color: peru; }
+  #winnerPane .winnerYear {
+    font-size: 35px; }
+  #winnerPane .individualWinnerBox li {
+    font-size: 17px; }
+  ul.bottomNav li a {
+    font-size: 24px;
+    letter-spacing: 1px; } }
+
+@media (min-width: 551px) and (max-width: 650px) {
+  #WinnerContainer .firstPane #banner {
+    font-size: 40px; }
+  #WinnerContainer .firstPane #marqueeText1 {
+    font-size: 55px; }
+  #WinnerContainer .firstPane #marqueeText2 {
+    font-size: 55px; }
+  #WinnerContainer #splashHeadline {
+    left: 10%;
+    font-size: 27px; }
+  #winnerPane .winnerYear {
+    font-size: 25px; }
+  #winnerPane .individualWinnerBox {
+    flex: column nowrap; }
+    #winnerPane .individualWinnerBox ul {
+      transform: rotate(-90deg);
+      margin-left: -10px; }
+    #winnerPane .individualWinnerBox li {
+      font-size: 15px;
+      background-color: yellow; }
+    #winnerPane .individualWinnerBox .winnerName {
+      padding-bottom: 2px;
+      white-space: nowrap; }
+    #winnerPane .individualWinnerBox .winnerTitle {
+      margin-top: -5px; }
+  ul.bottomNav li a {
+    font-size: 18px;
+    letter-spacing: .8px; } }
+
+@media (max-width: 550px) {
+  #WinnerContainer .firstPane #banner {
+    font-size: 40px; }
+  #WinnerContainer .firstPane #marqueeText1 {
+    font-size: 55px; }
+  #WinnerContainer .firstPane #marqueeText2 {
+    font-size: 55px; }
+  #WinnerContainer #splashHeadline {
+    left: 10%;
+    font-size: 27px; }
+  #winnerPane .winnerYear {
+    font-size: 25px; }
+  #winnerPane .individualWinnerBox {
+    flex: column nowrap;
+    margin: 0 2px; }
+    #winnerPane .individualWinnerBox ul {
+      transform: rotate(-90deg);
+      margin-left: -10px; }
+    #winnerPane .individualWinnerBox li {
+      font-size: 13px; }
+    #winnerPane .individualWinnerBox .winnerName {
+      padding-bottom: 1px;
+      white-space: nowrap; }
+    #winnerPane .individualWinnerBox .winnerTitle {
+      margin-top: -5px; }
+  ul.bottomNav li a {
+    font-size: 18px;
+    letter-spacing: .8px; } }

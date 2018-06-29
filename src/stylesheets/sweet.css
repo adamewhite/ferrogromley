@@ -1,0 +1,650 @@
+#AppContainer {
+  position: relative;
+  height: 500vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f8f8f8; }
+  #AppContainer a {
+    text-decoration: none;
+    color: black;
+    pointer: cursor; }
+    #AppContainer a:active, #AppContainer a:hover {
+      padding-bottom: 3px;
+      border-bottom: 5px solid black; }
+  #AppContainer .active {
+    padding-bottom: 3px;
+    border-bottom: 5px solid black;
+    pointer-events: none;
+    cursor: default; }
+
+#firstPane,
+#secondPane,
+#thirdPane,
+#fourthPane,
+#fifthPane {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  min-height: 800px; }
+  #firstPane .splashDescription,
+  #secondPane .splashDescription,
+  #thirdPane .splashDescription,
+  #fourthPane .splashDescription,
+  #fifthPane .splashDescription {
+    position: absolute;
+    font-family: 'America', serif;
+    font-size: 22px;
+    max-width: 35vw;
+    line-height: 25px; }
+
+#firstPane ul {
+  position: absolute;
+  top: 25vh;
+  left: 8vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 55vw; }
+  #firstPane ul li {
+    font-family: 'America';
+    font-size: 20px;
+    padding: 0 2vw; }
+    #firstPane ul li a {
+      color: black; }
+
+#banner {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  font-size: 55px;
+  font-family: 'Eesti', Courier;
+  max-width: 45vw;
+  color: black; }
+
+#thinBlackBar {
+  position: absolute;
+  height: 1.5vw;
+  width: 64vw;
+  background-color: black;
+  transform: rotate(-20deg);
+  left: -20%;
+  right: auto;
+  top: 55%;
+  bottom: auto;
+  mix-blend-mode: normal;
+  animation: blackTeetering 20s alternate infinite 3s; }
+
+#blueCircle {
+  position: absolute;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  background-color: #0098d2;
+  left: 45%;
+  right: auto;
+  top: 30%;
+  bottom: auto;
+  mix-blend-mode: normal;
+  transform: translate(0px, -6.51px) rotate(0deg);
+  animation: wobbling 10s alternate infinite 3s; }
+
+#yellowBar {
+  position: absolute;
+  height: 3vw;
+  width: 34vw;
+  background-color: #f7e87c;
+  transform: rotate(5deg);
+  left: auto;
+  right: 5vw;
+  top: 30vh;
+  bottom: auto;
+  mix-blend-mode: multiply;
+  transform: rotate(-1.79deg);
+  z-index: 5;
+  animation: yellowTeetering 9s alternate infinite 3s; }
+
+#smallRedHalfCircle {
+  position: absolute;
+  height: 6.4vw;
+  width: 12.8vw;
+  /*border-radius: 50%;*/
+  border-bottom-left-radius: 12.8vw;
+  border-bottom-right-radius: 12.8vw;
+  background-color: #fa4b4b;
+  left: 55%;
+  right: auto;
+  top: 40%;
+  bottom: auto;
+  mix-blend-mode: normal;
+  transform: translate(0px, 23.81px) rotate(-40deg);
+  animation: wobbling 10s alternate infinite 3s; }
+
+#aquaHalfCircle {
+  position: absolute;
+  background-color: #00EEC8;
+  height: 90vh;
+  width: 90vh;
+  border-radius: 50%;
+  top: 0;
+  right: -45vh;
+  mix-blend-mode: normal; }
+
+.blackBarBox {
+  position: absolute; }
+
+#blackBarBox1 {
+  right: 20vw;
+  top: 74vh;
+  animation: wobbling 10s alternate infinite; }
+
+.subBlackBar {
+  position: absolute;
+  width: 10vw;
+  height: 1.5vh;
+  background-color: black; }
+
+.subBlackBar1 {
+  top: 0; }
+
+.subBlackBar2 {
+  top: 20px; }
+
+.subBlackBar3 {
+  top: 40px; }
+
+.subBlackBar4 {
+  top: 60px; }
+
+.subBlackBar5 {
+  top: 80px; }
+
+#splashHeadline {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  font-family: 'America', sans-serif;
+  font-size: 32px;
+  max-width: 45%; }
+
+#splashText {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  font-family: 'America', sans-serif;
+  font-size: 20px;
+  max-width: 35%;
+  line-height: 25px; }
+
+@keyframes wobbling {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg); }
+  100% {
+    transform: translate(5%, 50%) rotate(5deg); } }
+
+@keyframes blackTeetering {
+  0% {
+    transform: rotate(-20deg); }
+  100% {
+    transform: rotate(-5deg); } }
+
+@keyframes yellowTeetering {
+  0% {
+    transform: rotate(5deg); }
+  100% {
+    transform: rotate(20deg); } }
+
+/* second pane */
+#secondPane #paleBlueHalfCircle {
+  position: absolute;
+  left: -39vh;
+  top: 10vh;
+  width: 80vh;
+  height: 80vh;
+  background: #C3FFF6;
+  border-radius: 100%; }
+
+#secondPane #largeRedHalfCircle {
+  position: absolute;
+  height: 12vw;
+  width: 24vw;
+  /*border-radius: 50%;*/
+  border-bottom-left-radius: 24vw;
+  border-bottom-right-radius: 24vw;
+  background-color: #fa4b4b;
+  top: 35vh;
+  left: 10vw;
+  z-index: 3;
+  animation: redHalfCircleBobbing 17s alternate infinite;
+  mix-blend-mode: multiply; }
+
+#secondPane #largeBlackBar {
+  position: absolute;
+  height: 3vw;
+  width: 45vw;
+  background-color: black;
+  left: -20vw;
+  right: auto;
+  top: 35vh;
+  bottom: auto;
+  mix-blend-mode: normal;
+  animation: blackTeetering 20s alternate infinite; }
+
+#secondPane #smallYellowSquare {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  background-color: #f7e87c;
+  top: 50vh;
+  left: 15vw;
+  z-index: 4;
+  animation: yellowSquareBobbing 10s alternate infinite; }
+
+@keyframes yellowSquareBobbing {
+  0% {
+    transform: translateY(0) rotate(40deg); }
+  100% {
+    transform: translateY(10vh) rotate(45deg); } }
+
+@keyframes redHalfCircleBobbing {
+  0% {
+    transform: translate(0, 0) rotate(30deg); }
+  100% {
+    transform: translate(1vw, 5vh) rotate(15deg); } }
+
+#secondPane #splashDescription1 {
+  left: 50vw;
+  top: 17vh; }
+
+#secondPane #splashDescription2 {
+  left: 50vw;
+  top: 56vh; }
+
+/* third pane */
+#thirdPane #blackBarBox2 {
+  right: 14vw;
+  top: 35vh;
+  animation: wobbling 10s alternate infinite; }
+
+#thirdPane #largePaleBlueCircle {
+  position: absolute;
+  right: 5vw;
+  top: 20vh;
+  width: 35vw;
+  height: 35vw;
+  background-color: #d4e9f1;
+  border-radius: 50%; }
+
+#thirdPane #largeYellowSquare {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  background-color: #f7e87c;
+  left: auto;
+  right: 25vw;
+  top: auto;
+  bottom: 43vh;
+  mix-blend-mode: normal;
+  animation: yellowSquarePivoting 13s alternate infinite; }
+
+#thirdPane #smallRedCircle {
+  position: absolute;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  background-color: #fa4b4b;
+  left: auto;
+  right: 23vw;
+  top: auto;
+  bottom: 35vh;
+  mix-blend-mode: normal;
+  animation: redCircleBobbing 9s alternate infinite; }
+
+#thirdPane #largeAquaRectangle {
+  position: absolute;
+  height: 5vw;
+  width: 12vw;
+  background-color: #3ae4c5;
+  left: auto;
+  right: 10vw;
+  top: auto;
+  bottom: 43vh;
+  mix-blend-mode: normal;
+  animation: aquaRectangleTwisting 12s alternate infinite; }
+
+#thirdPane #blueTriangle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 90px solid #0098d2;
+  left: auto;
+  right: 17vw;
+  top: auto;
+  bottom: 67vh;
+  mix-blend-mode: multiply;
+  animation: blueTrianglePivoting 10s alternate infinite; }
+
+@keyframes blueTrianglePivoting {
+  0% {
+    transform: translate(0, 2vh) rotate(5deg); }
+  100% {
+    transform: translate(1vw, 5vh) rotate(15deg); } }
+
+@keyframes yellowSquarePivoting {
+  0% {
+    transform: translate(0, 1vh) rotate(30deg); }
+  100% {
+    transform: translate(-1vw, -4vh) rotate(40deg); } }
+
+@keyframes redCircleBobbing {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-2vw, 4vh); } }
+
+@keyframes aquaRectangleTwisting {
+  0% {
+    transform: translate(0, 0) rotate(15deg); }
+  100% {
+    transform: translate(1vw, 1vh) rotate(25deg); } }
+
+#thirdPane #splashDescription3 {
+  top: 28vh;
+  left: 12vw;
+  /*font-size: 25px;*/ }
+
+/* fourth pane */
+#fourthPane .splashDescription {
+  position: absolute;
+  font-family: 'America', serif;
+  font-size: 22px;
+  max-width: 35vw;
+  line-height: 26px; }
+
+#fourthPane #splashDescription4 {
+  top: 12vh;
+  right: 15vw; }
+
+#fourthPane #splashDescription4 ul {
+  padding-top: 2vh; }
+
+#fourthPane #splashDescription4 ul li {
+  padding: 1vh 1vw;
+  font-family: 'AmericaItalic';
+  font-size: 21px; }
+
+#fourthPane #largeOrangeSquare {
+  position: absolute;
+  top: 20vh;
+  left: -9vh;
+  height: 55vh;
+  width: 55vh;
+  background-color: #FBC793;
+  transform: rotate(40deg);
+  z-index: 1; }
+
+#fourthPane #mediumRedCircle {
+  position: absolute;
+  top: 30vh;
+  left: 7vh;
+  height: 15vh;
+  width: 15vh;
+  background-color: #FB4D73;
+  border-radius: 50%;
+  z-index: 3;
+  mix-blend-mode: multiply;
+  animation: mediumRedCircleShifting 11s alternate infinite; }
+
+#fourthPane #smallYellowTriangle {
+  position: absolute;
+  top: 40vh;
+  left: 30vh;
+  height: 0;
+  width: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 120px solid #68FF89;
+  z-index: 3;
+  mix-blend-mode: lighten;
+  animation: smallYellowTriangleRotating 20s alternate infinite; }
+
+#fourthPane #mediumGreenRectangle {
+  position: absolute;
+  top: 25vh;
+  left: 33vh;
+  height: 4vh;
+  width: 15vw;
+  background-color: #64FFC5;
+  z-index: 3;
+  mix-blend-mode: multiply;
+  animation: mediumGreenRectangleTwisting 14s alternate infinite; }
+
+#fourthPane #mediumBlueBar {
+  position: absolute;
+  top: 60vh;
+  left: 22vh;
+  height: 15vh;
+  width: 8vw;
+  background-color: #21B9FB;
+  z-index: 3;
+  mix-blend-mode: normal;
+  animation: mediumBlueBarBobbing 12s alternate infinite; }
+
+@keyframes mediumRedCircleShifting {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(2vw, 6vh); } }
+
+@keyframes smallYellowTriangleRotating {
+  0% {
+    transform: translate(0, 0) rotate(10deg); }
+  100% {
+    transform: translate(1vw, 1vh) rotate(50deg); } }
+
+@keyframes mediumBlueBarBobbing {
+  0% {
+    transform: translate(0, 0) rotate(-5deg); }
+  50% {
+    transform: translate(-1vw, 1vh) rotate(3deg); }
+  100% {
+    transform: translate(-3vw, 4vh) rotate(8deg); } }
+
+@keyframes mediumGreenRectangleTwisting {
+  0% {
+    transform: translate(0, 0) rotate(-10deg); }
+  100% {
+    transform: translate(-1vw, 1vh) rotate(10deg); } }
+
+/* fifth pane */
+#fifthPane #bigYellowCircle {
+  position: absolute;
+  top: 45vh;
+  left: 1vw;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  background-color: #FCEF7B;
+  animation: bigYellowCircleBobbing 15s alternate infinite; }
+
+#fifthPane #littleRedCircle {
+  position: absolute;
+  top: 5vh;
+  left: 20vw;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+  background-color: #F91A33;
+  animation: littleRedCircleBobbing 15s alternate infinite; }
+
+#fifthPane #littleBlueBar {
+  position: absolute;
+  top: 40vh;
+  left: 25vw;
+  height: 4vh;
+  width: 7vw;
+  background-color: #736CFD;
+  animation: littleBlueBarRotating 15s alternate infinite; }
+
+#fifthPane #longRedBar {
+  position: absolute;
+  top: 45vh;
+  left: 60vw;
+  height: 1vh;
+  width: 40vw;
+  background-color: #FA0C16;
+  animation: longRedBarRotating 15s alternate infinite; }
+
+#fifthPane #littleGreenTriangle {
+  position: absolute;
+  top: 15vh;
+  left: 85vw;
+  height: 0;
+  width: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 90px solid #52FFAE;
+  animation: littleGreenTriangleBobbing 15s alternate infinite; }
+
+@keyframes bigYellowCircleBobbing {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(1vw, 6vh); } }
+
+@keyframes littleRedCircleBobbing {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0.3vw, 3vh); } }
+
+@keyframes littleBlueBarRotating {
+  0% {
+    transform: translate(0, 0) rotate(-5deg); }
+  100% {
+    transform: translate(0.2vw, -0.3vh) rotate(-15deg); } }
+
+@keyframes longRedBarRotating {
+  0% {
+    transform: translate(0, 0) rotate(75deg); }
+  100% {
+    transform: translate(-0.2vw, 0.3vh) rotate(85deg); } }
+
+@keyframes littleGreenTriangleBobbing {
+  0% {
+    transform: translate(0, 0) rotate(5deg); }
+  100% {
+    transform: translate(2vw, 4vh) rotate(10deg); } }
+
+#fifthPane ul.bottomNav {
+  position: absolute;
+  top: 82vh;
+  width: 100vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; }
+  #fifthPane ul.bottomNav .active {
+    border-bottom: 5px solid white; }
+
+#fifthPane ul#sweetBottomNav li a {
+  color: white;
+  font-family: 'Eesti';
+  font-size: 30px;
+  letter-spacing: 1.5px; }
+  #fifthPane ul#sweetBottomNav li a:active, #fifthPane ul#sweetBottomNav li a:hover {
+    padding-bottom: 3px;
+    border-bottom: 5px solid white; }
+
+@media (min-width: 651px) and (max-width: 850px) {
+  #AppContainer #splashHeadline {
+    left: 10%;
+    font-size: 27px; }
+  #AppContainer .splashDescription {
+    font-size: 20px;
+    line-height: 22px; }
+  #AppContainer #splashDescription4 ul li {
+    font-size: 19px !important;
+    line-height: 23px; }
+  #AppContainer #splashDescription1 {
+    left: 55vw;
+    top: 17vh; }
+  #AppContainer #splashDescription2 {
+    left: 55vw;
+    top: 56vh; }
+  #AppContainer #splashDescription3 {
+    top: 28vh;
+    left: 10vw; }
+  #AppContainer #splashDescription4 {
+    top: 12vh;
+    right: 8vw; }
+  #fifthPane ul#sweetBottomNav li a {
+    font-size: 24px;
+    letter-spacing: 1px; } }
+
+@media (max-width: 650px) {
+  #AppContainer #banner {
+    font-size: 40px; }
+  #AppContainer #firstPane ul {
+    top: 22vh;
+    left: 5vw;
+    z-index: 2; }
+  #AppContainer #firstPane #aquaHalfCircle {
+    height: 60vh;
+    width: 60vh;
+    top: 25vh;
+    right: -30vh; }
+  #AppContainer #firstPane #smallRedHalfCircle {
+    height: 8.4vw;
+    width: 16.8vw;
+    z-index: 2; }
+  #AppContainer #firstPane #blackBarBox1 {
+    right: 25vw;
+    top: 74vh;
+    animation: wobbling 10s alternate infinite; }
+  #AppContainer #firstPane .subBlackBar {
+    width: 20vw;
+    height: 1vh; }
+  #AppContainer #splashHeadline {
+    top: 60%;
+    left: 10%;
+    font-size: 18px;
+    line-height: 20px; }
+  #AppContainer .splashDescription {
+    font-size: 17px;
+    max-width: 43vw;
+    line-height: 19px; }
+  #AppContainer #splashDescription4 {
+    z-index: 5; }
+    #AppContainer #splashDescription4 ul li {
+      font-size: 16px !important;
+      line-height: 19px;
+      z-index: 5; }
+  #AppContainer #largeOrangeSquare {
+    top: 20vh;
+    left: -24vh;
+    height: 50vh;
+    width: 50vh; }
+  #AppContainer #smallYellowTriangle {
+    top: 40vh;
+    left: 10vh;
+    z-index: 4; }
+  #AppContainer #mediumRedCircle {
+    top: 20vh;
+    left: 3vh; }
+  #AppContainer #splashDescription1 {
+    left: 55vw;
+    top: 17vh; }
+  #AppContainer #splashDescription2 {
+    left: 55vw;
+    top: 56vh; }
+  #AppContainer #splashDescription3 {
+    top: 28vh;
+    left: 10vw;
+    /*font-size: 25px;*/ }
+  #AppContainer #splashDescription4 {
+    top: 12vh;
+    right: 8vw; }
+  #fifthPane ul#sweetBottomNav li a {
+    font-size: 18px;
+    letter-spacing: .8px; } }

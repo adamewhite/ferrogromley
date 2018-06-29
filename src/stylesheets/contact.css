@@ -1,0 +1,269 @@
+#contactContainer {
+  height: 300vh;
+  max-width: 100vw;
+  background-color: #b5f7a9; }
+  #contactContainer a {
+    text-decoration: none;
+    color: black;
+    pointer: cursor; }
+    #contactContainer a:active, #contactContainer a:hover {
+      padding-bottom: 3px;
+      border-bottom: 5px solid black; }
+  #contactContainer .active {
+    padding-bottom: 3px;
+    border-bottom: 5px solid black;
+    pointer-events: none;
+    cursor: default; }
+
+.firstPane {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 1px dotted transparent;
+  background-color: transparent; }
+
+#banner {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  font-size: 55px;
+  font-family: 'Eesti', Courier;
+  max-width: 45vw;
+  z-index: 5; }
+
+.firstPane ul {
+  position: absolute;
+  top: 25vh;
+  left: 8vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 55vw;
+  z-index: 5; }
+  .firstPane ul li {
+    font-family: 'America';
+    font-size: 20px;
+    padding: 0 2vw; }
+
+#marqueeText1 {
+  position: absolute;
+  top: 55vh;
+  left: 10vw;
+  font-size: 80px;
+  font-family: 'Eesti', Courier;
+  max-width: 45vw;
+  z-index: 5; }
+
+#marqueeText2 {
+  position: absolute;
+  top: 65vh;
+  left: 15vw;
+  font-size: 80px;
+  font-family: 'Eesti', Courier;
+  max-width: 45vw;
+  z-index: 5; }
+
+#bigYellowSquare {
+  position: absolute;
+  height: 70vw;
+  width: 70vw;
+  background-color: #F4DC4B;
+  top: -30vh;
+  right: 20vw;
+  transform: rotate(-75deg);
+  animation: bigBlueHalfCircleBobbing 20s alternate infinite; }
+
+#mediumBlueCircle {
+  position: absolute;
+  height: 18vh;
+  width: 18vh;
+  border-radius: 50%;
+  background-color: #4389F4;
+  top: 25vh;
+  right: 25vw;
+  animation: mediumPinkCircleBobbing 17s alternate infinite; }
+
+#mediumRedBar {
+  position: absolute;
+  height: 5vh;
+  width: 35vw;
+  background-color: #FF0038;
+  top: 55vh;
+  left: 35vw;
+  transform: rotate(80deg);
+  animation: mediumRedBarWobbling 15s alternate infinite; }
+
+@keyframes bigBlueHalfCircleBobbing {
+  0% {
+    transform: translate(0, 0) rotate(-75deg); }
+  100% {
+    transform: translate(1vw, 3vh) rotate(-65deg); } }
+
+@keyframes mediumPinkCircleBobbing {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(3vw, 5vh); } }
+
+@keyframes mediumRedBarWobbling {
+  0% {
+    transform: translate(0, 0) rotate(80deg); }
+  100% {
+    transform: translate(-1vw, -4vh) rotate(50deg); } }
+
+#contactPane {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 10vh; }
+  #contactPane p {
+    font-family: 'Eesti';
+    font-size: 40px;
+    padding: 8vh 5vw;
+    max-width: 70vw;
+    line-height: 44px;
+    z-index: 10; }
+  #contactPane a {
+    border-bottom: 5px solid black;
+    padding-bottom: 0px;
+    transition: .3s;
+    white-space: nowrap; }
+  #contactPane a:hover {
+    color: peru;
+    border-bottom: 5px solid peru;
+    padding-bottom: 0px; }
+  #contactPane ul {
+    margin: 1vh 0 2vh 0; }
+    #contactPane ul li {
+      font-family: 'America';
+      font-size: 25px;
+      padding: 1vh 1vw 1vh 9vw; }
+  #contactPane #smallHalfCircle {
+    position: absolute;
+    background-color: #00EEC8;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    top: 20vh;
+    right: -30vh;
+    mix-blend-mode: multiply; }
+  #contactPane .blackBarBox {
+    position: absolute;
+    top: 25vh;
+    right: 25vw;
+    transform: rotate(10deg);
+    animation: wobbling 25s alternate infinite; }
+  #contactPane .subBlackBar {
+    position: absolute;
+    width: 15vw;
+    height: 1.5vh;
+    background-color: rgba(241, 154, 241, 0.8);
+    mix-blend-mode: difference; }
+  #contactPane .subBlackBar1 {
+    top: 0; }
+  #contactPane .subBlackBar2 {
+    top: 20px; }
+  #contactPane .subBlackBar3 {
+    top: 40px; }
+  #contactPane .subBlackBar4 {
+    top: 60px; }
+  #contactPane .subBlackBar5 {
+    top: 80px; }
+
+@keyframes wobbling {
+  0% {
+    transform: translate(0%, 0%) rotate(10deg); }
+  100% {
+    transform: translate(5%, 50%) rotate(-10deg); } }
+
+#bigTriangle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 30vh solid transparent;
+  border-right: 30vh solid transparent;
+  border-bottom: 45vh solid Violet;
+  transform: rotate(30deg);
+  top: 12vh;
+  right: 2vw;
+  animation: bigTriangleShimmying 27s alternate infinite; }
+
+#smallSquare {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  background-color: LightSkyBlue;
+  transform: rotate(-20deg);
+  top: 55vh;
+  right: 15vw;
+  mix-blend-mode: multiply;
+  animation: smallSquareShimmying 21s alternate infinite; }
+
+@keyframes bigTriangleShimmying {
+  0% {
+    transform: translate(0, 0) rotate(30deg); }
+  100% {
+    transform: translate(3vw, 3vh) rotate(10deg); } }
+
+@keyframes smallSquareShimmying {
+  0% {
+    transform: translate(0, 0) rotate(-20deg); }
+  100% {
+    transform: translate(-2vw, -3vh) rotate(25deg); } }
+
+.finalPane {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(254, 251, 210, 0);
+  position: relative; }
+
+ul.bottomNav {
+  position: absolute;
+  top: 82vh;
+  width: 100vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; }
+
+ul.bottomNav li {
+  color: white;
+  font-family: 'Eesti';
+  font-size: 30px; }
+
+@media (min-width: 651px) and (max-width: 850px) {
+  #contactContainer .firstPane #banner {
+    font-size: 40px; }
+  #contactContainer .firstPane #marqueeText1 {
+    font-size: 70px; }
+  #contactContainer .firstPane #marqueeText2 {
+    font-size: 70px; }
+  #contactContainer #contactPane p {
+    font-size: 30px;
+    padding: 8vh 2vw;
+    line-height: 36px; }
+  #contactContainer #contactPane a {
+    white-space: nowrap; }
+  #contactContainer #finalPane ul#bottomNav li a {
+    font-size: 24px;
+    letter-spacing: 1px; } }
+
+@media (max-width: 650px) {
+  #contactContainer .firstPane #banner {
+    font-size: 40px; }
+  #contactContainer .firstPane #marqueeText1 {
+    font-size: 55px; }
+  #contactContainer .firstPane #marqueeText2 {
+    font-size: 55px; }
+  #contactContainer #contactPane p {
+    font-size: 26px;
+    padding: 8vh 2vw;
+    max-width: 90vw;
+    line-height: 32px; }
+  #contactContainer #contactPane a {
+    white-space: nowrap; }
+  #contactContainer #finalPane ul#bottomNav li a {
+    font-size: 18px;
+    letter-spacing: .8px; } }

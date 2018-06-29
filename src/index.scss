@@ -1,0 +1,221 @@
+@font-face{
+  font-family: 'America';
+  src: url('./assets/fonts/GT-America-Mono-Trial-Light.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'AmericaItalic';
+  src: url('./assets/fonts/GT-America-Mono-Trial-Light-Italic.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'Eesti';
+  src: url('./assets/fonts/GT-Eesti-Pro-Display-Trial-Medium-Italic.otf') format('opentype');
+  font-weight: 500;
+}
+
+/* css reset */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* global styling */
+
+body, html {
+  font-family: serif;
+  color: black;
+}
+
+.no-break {
+	white-space: nowrap;
+}
+
+
+/* font imports
+
+@font-face{
+  font-family: 'Fenix';
+  src: url('../assets/fonts/Fenix_Std.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'HKGrotesk';
+  src: url('../assets/fonts/HKGrotesk-LightLegacy.otf') format('opentype');
+  font-weight: 100;
+}
+
+@font-face{
+  font-family: 'HKGrotesk';
+  src: url('../assets/fonts/HKGrotesk-MediumLegacy.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: 'HKGrotesk';
+  src: url('../assets/fonts/HKGrotesk-SemiBoldLegacy.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'HKGrotesk';
+  src: url('../assets/fonts/HKGrotesk-BoldLegacy.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: 'Lora';
+  src: url('../assets/fonts/Lora-Regular.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'Lora';
+  src: url('../assets/fonts/Lora-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: 'LoraItalic';
+  src: url('../assets/fonts/Lora-Italic.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'LoraItalic';
+  src: url('../assets/fonts/Lora-BoldItalic.woff') format('opentype');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: 'Decalotype';
+  src: url('../assets/fonts/Decalotype-Light.woff') format('opentype');
+  font-weight: 100;
+}
+
+@font-face{
+  font-family: 'Decalotype';
+  src: url('../assets/fonts/Decalotype-Regular.woff') format('opentype');
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: 'Decalotype';
+  src: url('../assets/fonts/Decalotype-SemiBold.woff') format('opentype');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'Decalotype';
+  src: url('../assets/fonts/Decalotype-Bold.woff') format('opentype');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: 'DecalotypeItalic';
+  src: url('../assets/fonts/Decalotype-LightItalic.woff') format('opentype');
+  font-weight: 100;
+}
+
+@font-face{
+  font-family: 'DecalotypeItalic';
+  src: url('../assets/fonts/Decalotype-MediumItalic.woff') format('opentype');
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: 'DecalotypeItalic';
+  src: url('../assets/fonts/Decalotype-SemiBoldItalic.woff') format('opentype');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'DecalotypeItalic';
+  src: url('../assets/fonts/Decalotype-BoldItalic.woff') format('opentype');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: 'Okomito';
+  src: url('../assets/fonts/Okomito-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'Josefin Slab';
+  src: url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: 'Abril Fatface';
+  src: url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+  font-weight: 500;
+}
+
+*/
+
+
+
+
+
+
+
+

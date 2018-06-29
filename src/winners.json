@@ -1,0 +1,334 @@
+{
+  "winners": [
+              {
+                "name": "Ruthann Robson",
+                "title": "Eye of the Hurricane",
+                "year": "1989",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/eyeofhurricane.jpg"
+              },
+              {
+                "name": "Dennis Cooper",
+                "title": "Closer",
+                "year": "1989",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/closer.jpg"
+              },
+              {
+                "name": "Allen Barnett",
+                "title": "The Body and Its Dangers",
+                "year": "1990",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/bodyanddangers.jpg"
+              },
+              {
+                "name": "Cherry Muhanji",
+                "title": "Her",
+                "year": "1990",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/her.jpg"
+              },
+              {
+                "name": "Blanche McCrary Boyd",
+                "title": "The Revolution of Little Girls",
+                "year": "1991",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/littlegirls.jpg"
+              },
+              {
+                "name": "Melvin Dixon",
+                "title": "Vanishing Rooms",
+                "year": "1991",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/vanishing.jpg"
+              },
+              {
+                "name": "Randall Kenan",
+                "title": "Let the Dead Bury Their Dead",
+                "year": "1992",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/deadbury.jpg"
+              },
+              {
+                "name": "Dorothy Allison",
+                "title": "Bastard Out of Carolina",
+                "year": "1992",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/bastard.jpg"
+              },
+              {
+                "name": "Jeanette Winterson",
+                "title": "Written on the Body",
+                "year": "1993",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/writtenbody.jpg"
+              },
+              {
+                "name": "John Berendt",
+                "title": "Midnight in the Garden of Good and Evil",
+                "year": "1993",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/midnight.jpg"
+              },
+              {
+                "name": "Mark Merlis",
+                "title": "American Studies",
+                "year": "1994",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/americanstudies.jpg"
+              },
+              {
+                "name": "Heather Lewis",
+                "title": "House Rules",
+                "year": "1994",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/houserules.jpg"
+              },
+              {
+                "name": "Sarah Schulman",
+                "title": "Rat Bohemia",
+                "year": "1995",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/ratbohemia.jpg"
+              },
+              {
+                "name": "Felice Picano",
+                "title": "Like People in History",
+                "year": "1995",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/peoplehistory.jpg"
+              },
+              {
+                "name": "Persimmon Blackbridge",
+                "title": "Sunnybrook",
+                "year": "1996",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/sunnybrook.jpg"
+              },
+              {
+                "name": "Andrew Holleran",
+                "title": "The Beauty of Men",
+                "year": "1996",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/beautymen.jpg"
+              },
+              {
+                "name": "Colm Toibin",
+                "title": "The Story of the Night",
+                "year": "1997",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/storynight.jpg"
+              },
+              {
+                "name": "Elana Dykewoman",
+                "title": "Beyond the Pale",
+                "year": "1997",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/beyondthepale.jpg"
+              },
+              {
+                "name": "Michael Cunningham",
+                "title": "The Hours",
+                "year": "1998",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/thehours.jpg"
+              },
+              {
+                "name": "Patricia Powell",
+                "title": "The Pagoda",
+                "year": "1998",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/pagoda.jpg"
+              },
+              {
+                "name": "Judy Doenges",
+                "title": "What She Left Me",
+                "year": "1999",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/sheleftme.jpg"
+              },
+              {
+                "name": "Paul Russell",
+                "title": "The Coming Storm",
+                "year": "1999",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/comingstorm.jpg"
+              },
+              {
+                "name": "Sarah Waters",
+                "title": "Affinity",
+                "year": "2000",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/affinity.jpg"
+              },
+              {
+                "name": "Edmund White",
+                "title": "The Married Man",
+                "year": "2000",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/marriedman.jpg"
+              },
+              {
+                "name": "David Ebershoff",
+                "title": "The Rose City",
+                "year": "2001",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/rosecity.jpg"
+              },
+              {
+                "name": "Emma Donoghue",
+                "title": "Slammerkin",
+                "year": "2001",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/slammerkin.jpg"
+              },
+              {
+                "name": "Carol Anshaw",
+                "title": "Lucky in the Corner",
+                "year": "2002",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/luckycorner.jpg"
+              },
+              {
+                "name": "Jamie O'Neill",
+                "title": "At Swim, Two Boys",
+                "year": "2002",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/atswim.jpg"
+              },
+              {
+                "name": "Trebor Healey",
+                "title": "Through It Came Bright Colors",
+                "year": "2003",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/brightcolors.jpg"
+              },
+              {
+                "name": "Nina Revoyr",
+                "title": "Southland",
+                "year": "2003",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/southland.jpg"
+              },
+              {
+                "name": "Stacey D’Erasmo",
+                "title": "A Seahorse Year",
+                "year": "2004",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/seahorse.jpg"
+              },
+              {
+                "name": "Adam Berlin",
+                "title": "Belmondo Style",
+                "year": "2004",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/belmondo.jpg"
+              },
+              {
+                "name": "Barry McCrea",
+                "title": "The First Verse",
+                "year": "2005",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/firstverse.jpg"
+              },
+              {
+                "name": "Patricia Grossman",
+                "title": "Brian in Three Seasons",
+                "year": "2005",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/brianinthreeseasons.jpg"
+              },
+              {
+                "name": "Lisa Carey",
+                "title": "Every Visible Thing",
+                "year": "2006",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/visiblething.jpg"
+              },
+              {
+                "name": "Christopher Bram",
+                "title": "Exiles In America",
+                "year": "2006",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/exilesinamerica.jpg"
+              },
+              {
+                "name": "Peter Cameron",
+                "title": "Someday This Pain Will Be Useful To You",
+                "year": "2007",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/painuseful.jpg"
+              },
+              {
+                "name": "Ali Liebegott",
+                "title": "The IHOP Papers",
+                "year": "2007",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/ihoppapers.jpg"
+              },
+              {
+                "name": "Alison Bechdel",
+                "title": "The Essential Dykes to Watch Out For",
+                "year": "2008",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/essentialdykes.jpg"
+              },
+              {
+                "name": "Sebastian Stuart",
+                "title": "The Hour Between",
+                "year": "2009",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/hourbetween.jpg"
+              },
+              {
+                "name": "Michael Sledge",
+                "title": "The More I Owe You",
+                "year": "2010",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/moreioweyou.jpg"
+              },
+              {
+                "name": "Paul Russell",
+                "title": "The Unreal Life of Sergey Nabokov",
+                "year": "2011",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/sergeynabokov.jpg"
+              },
+              {
+                "name": "Trebor Healey",
+                "title": "A Horse Named Sorrow",
+                "year": "2012",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/horsesorrow.jpg"
+              },
+              {
+                "name": "Sara Farizan",
+                "title": "If You Could Be Mine",
+                "year": "2013",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/couldbemine.jpg"
+              },
+              {
+                "name": "Bernardine Evaristo",
+                "title": "Mr. Loverman",
+                "year": "2014",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/loverman.jpg"
+              },
+              {
+                "name": "Michael Golding",
+                "title": "A Poet of the Invisible World",
+                "year": "2015",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/poetinvisible.jpg"
+              },
+              {
+                "name": "Cathleen Schine",
+                "title": "They May Not Mean To, But They Do",
+                "year": "2016",
+                "authorImageLocation": "assets/images/xxx.jpg",
+                "bookImageLocation": "assets/images/theymaynotmean.jpg"
+              }
+
+            ]
+}
