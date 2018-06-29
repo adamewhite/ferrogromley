@@ -11,7 +11,7 @@ const App = () => (
 
 	  	<ScrollToTop>
 
-		    {/*<Switch>*/}
+		    <Switch>
 
 		      <Route exact path='/' component={Sweet}/>
 
@@ -23,7 +23,7 @@ const App = () => (
 
 		      <Redirect to={{pathname: '/'}} />
 
-		    {/*</Switch>*/}
+		    </Switch>
 
 	    </ScrollToTop>
 
