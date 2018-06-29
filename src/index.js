@@ -5,7 +5,7 @@ import 'normalize.css';
 import App from './App';
 
 const Main = () => (
-  <BrowserRouter basename={'/ferrogromley'}>
+  <BrowserRouter basename={'/ferro'}>
     <Route path="/" component={App} />
   </BrowserRouter>
 );
